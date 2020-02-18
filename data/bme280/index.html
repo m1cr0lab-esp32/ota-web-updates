@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>BME280 Monitoring</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="panel">
+            <div class="heading">BME280 Monitoring</div>
+            <div class="monitor">
+                
+                <div class="label">Temperature</div>
+                <div id="temperature" class="data">0</div>
+                <div class="unit">°C</div>
+
+                <div class="label">Pressure</div>
+                <div id="pressure" class="data">0</div>
+                <div class="unit">hPa</div>
+
+                <div class="label">Humidity</div>
+                <div id="humidity" class="data">0</div>
+                <div class="unit">%</div>
+
+            </div>
+            <a href="/update" class="link">OTA Update</a>
+        </div>
+    </body>
+</html>

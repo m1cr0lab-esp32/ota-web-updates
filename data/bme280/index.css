@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'seven-segment';
+    src: url("seven-segment.ttf") format("truetype")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 12pt
+}
+
+html {
+    background-color: #181a1b;
+    color: #39f
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden
+}
+
+a {
+    text-decoration: none
+}
+
+.panel {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    justify-items: center
+}
+
+.heading {
+    font-size: 1.25rem;
+    text-shadow: 0 2px 2px #000
+}
+
+.monitor {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-row-gap: .5rem;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #29333d;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 8px rgba(0, 0, 0, 0.5)
+}
+
+.label,
+.unit {
+    color: #668099;
+    text-shadow: 0 -1px 0 #000
+}
+
+.label {
+    text-align: right
+}
+
+.data {
+    width: 5rem;
+    margin: 0 .5rem 0 1rem;
+    padding: .25rem .5rem;
+    border-radius: 4pt;
+    background-color: #0c1f31;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.75);
+    outline: none;
+    font-family: 'seven-segment', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #0080ff
+}
+
+.link {
+    margin-top: 2rem;
+    color: #0fa;
+    text-shadow: 0 2px 2px #000
+}
+
+.link:hover {
+    color: #ffd500
+}
